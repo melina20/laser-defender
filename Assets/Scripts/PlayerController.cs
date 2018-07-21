@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 
 		MoveShip();
 		LaserShoot();
-        if (ScoreKeeper.score == 600)
+        if (ScoreKeeper.score > 600)
         {
             WinGame();
         }
