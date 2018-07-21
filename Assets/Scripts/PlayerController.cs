@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour {
 
 		MoveShip();
 		LaserShoot();
+        if (ScoreKeeper.score == 600)
+        {
+            WinGame();
+        }
 	}
 
 	void MoveShip(){
@@ -77,7 +81,14 @@ public class PlayerController : MonoBehaviour {
 
     void Die() {
         LevelManager man = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-        man.LoadLevel("Win Screen");
+        man.LoadLevel("Defeat");
+        Destroy(gameObject);
+    }
+
+    void WinGame()
+    {
+        LevelManager lvl = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        lvl.LoadLevel("Win Screen");
         Destroy(gameObject);
     }
 
