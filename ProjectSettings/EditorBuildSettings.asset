@@ -7,11 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_Scenes/Start Menu.unity
-    guid: 00000000000000000000000000000000
+    guid: 7fb2975dcf29a4142a061d5e32644c94
   - enabled: 1
     path: Assets/_Scenes/Game.unity
-    guid: 00000000000000000000000000000000
+    guid: d0249f1041728f941b3383296eae3ba8
   - enabled: 1
     path: Assets/_Scenes/Win Screen.unity
-    guid: 00000000000000000000000000000000
+    guid: 14c4ccf78295b44a4b81771a29ac16ba
+  - enabled: 1
+    path: Assets/_Scenes/Defeat.unity
+    guid: b6788c437906abc47a68570dafa178d5
   m_configObjects: {}
